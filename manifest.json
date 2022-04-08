@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "e-Dnevnik Plus",
+  "description": "Napredna verzija e-Dnevnika za učenike i roditelje.",
+  "author": "Kristijan Rosandić",
+  "version": "5.0.1",
+  "icons": {
+    "16": "assets/img/logo-light.png",
+    "48": "assets/img/logo.png",
+    "128": "assets/img/logo.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content-script.js"
+      ],
+      "matches": [
+        "*://ocjene.skole.hr/*"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
